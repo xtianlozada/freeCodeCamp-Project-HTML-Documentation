@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="freecodecamp10.css">
+    <title>Technical Documentation Page</title>
+  </head>
+  <body>
+    <div id="navi">
+    <nav id="navbar">
+      <header>Html Documentation</header>
+      <ul>
+        <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+        <li><a href="#Basic_Structure_of_an_HTML_Document" class="nav-link">Basic Structure of an HTML Document</a></li>
+        <li><a href="#Text_Formatting" class="nav-link">Text Formatting</a></li>
+        <li><a href="#Links_and_Images" class="nav-link">Links and Images</a></li>
+        <li><a href="#Lists" class="nav-link">Lists</a></li>
+      </ul>
+      
+    </nav>
+    </div>
+    <div id="mani">
+    <main id="main-doc">
+        <marquee id="design">~ ~ ~ HTML DOCUMENTATION ~ ~ ~</marquee>
+        <section class="main-section" id="Introduction">
+          <header>Introduction</header>
+          <p>HTML (Hypertext Markup Language) is the standard language for creating web pages. It allows developers to structure and display content through elements, tags, and attributes that describe different parts of a web page, like headings, paragraphs, images, and links.</p>
+          <p>HTML is used in conjunction with CSS (for styling) and JavaScript (for functionality) to create fully interactive and responsive websites. Each HTML document is essentially a set of nested elements, creating a tree structure known as the Document Object Model (DOM).</p>
+          <ul>
+            <li>The (!DOCTYPE html) declaration defines that this document is an HTML5 document.</li>
+            <li>The (html) element is the root element of an HTML page.</li>
+            <li>The (head) element contains meta information about the HTML page.</li>
+            <li>The (title) element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab).</li>
+            <li>The (body) element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.</li>
+            <li>The (h1) element defines a large heading.</li>
+          </ul>
+          <h4>Example Code:</h4>
+          <pre><code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;&lt;title&gt;Hello World&lt;/title&gt;&lt;/head&gt;
+            &lt;body&gt;&lt;h1&gt;Hello, World!&lt;/h1&gt;&lt;/body&gt;
+            &lt;/html&gt;
+          </code></pre>
+
+            
+        </section>
+        <section class="main-section" id="Basic_Structure_of_an_HTML_Document">
+          <header>Basic Structure of an HTML Document</header>
+          <p>A standard HTML document includes a DOCTYPE declaration, followed by html, head, and body sections.The head section contains metadata, links to stylesheets, and scripts, while the body section contains the content visible to the user.</p>
+          <p>The basic structure of an HTML document includes several key elements that help define its content and layout. At the top, the &lt;!DOCTYPE html&gt; declaration is used to specify that the document is an HTML5 document, ensuring modern browser compatibility. The entire content is wrapped in the &lt;html&gt; tag, which also contains a lang attribute to define the language of the document. Inside the &lt;html&gt; tag, the &lt;head&gt; section contains meta-information like character encoding, the document's title, and links to external resources such as stylesheets and scripts. The actual content that users see is placed inside the &lt;body&gt; section, which can include headings, paragraphs, images, links, and other elements to display the page’s information. Additionally, the use of tags like &lt;header&gt;, &lt;main&gt;, and &lt;footer&gt; helps organize content into sections, providing a structured layout for better accessibility and readability.</p>
+          <h4>Components:</h4>
+          <ul>
+            <li>DOCTYPE: Specifies the HTML version (typically HTML5).</li>
+            <li>Head: Contains metadata and links to external resources.</li>
+            <li>Body: Contains the main content displayed to users.</li>
+          </ul>
+          <h4>Example Code:</h4>  
+          
+        <pre><code class="code">
+          &lt;!DOCTYPE html&gt;
+          &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;Page Title&lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt;My First Heading&lt;/h1&gt;
+            &lt;p&gt;My first paragraph.&lt;/p&gt;
+          &lt;/body&gt;  
+          &lt;/html&gt;
+        </code></pre>
+        </section>
+        <section class="main-section" id="Text_Formatting">
+          <header>Text Formatting</header>
+          <p>HTML includes a variety of tags to format text. These tags are used to define elements like headings, paragraphs, bold, italics, and lists. This helps structure text content, making it easy to read and visually appealing.</p>
+          <p>In HTML, text formatting allows you to modify the appearance and style of text to improve readability and presentation. The &lt;b&gt; tag is used to bold text, while the &lt;i&gt; tag italicizes text. If you want to underline text, you can use the &lt;u&gt; tag. For making text stand out more semantically, the &lt;strong&gt; tag is used for important text, and the &lt;em&gt; tag is used for emphasized text. Additionally, the &lt;mark&gt; tag highlights text, which is useful for drawing attention to specific words or phrases. Combining these tags with CSS properties can further enhance text styling by adjusting font size, color, and alignment, providing a more visually appealing user experience.
+          </p>
+          <h4>Examples of text tags:</h4>
+          <ul>
+            <li>Headings: &lt;h1&gt;, &lt;h2&gt;, etc.</li>
+            <li>Paragraph: &lt;p&gt;</li>
+            <li>Bold: &lt;b&gt; or &lt;strong&gt;</li>
+            <li>Italic: &lt;i&gt; or &lt;em&gt;</li>
+          </ul>
+          <h4>Example Code:</h4>
+          <pre><code class="code">
+            &lt;p&gt;&lt;strong&gt;Bold text&lt;/strong&gt; and &lt;em&gt;italic text&lt;/em&gt;.&lt;/p&gt;
+          </code></pre>
+        </section>
+        <section class="main-section" id="Links_and_Images">
+          <header>Links and Images</header>
+          <p>Links in HTML: In HTML, links are created using the &lt;a&gt; (anchor) tag, which allows users to navigate from one webpage to another. The href attribute is used to specify the destination of the link, which could be another webpage, a section of the same page, or even an external resource. Links can be styled using CSS to enhance their appearance, such as changing color or adding hover effects. For example, &lt;a href="https://example.com"&gt;Click here&lt;/a&gt; creates a link to an external website. Links are essential for connecting different pages and resources on the web.
+          </p>
+          <p>Images in HTML: Images are included in HTML documents using the &lt;img&gt; tag. The src (source) attribute is used to specify the location of the image file, and the alt attribute provides alternative text in case the image cannot be displayed. Images can be resized using CSS properties like width, height, or by setting the max-width to 100% for responsive layouts. For example, &lt;img src="image.jpg" alt="Description of image"&gt; embeds an image into the page. Proper use of images and their descriptions enhances accessibility and user experience.
+          </p>
+          <h4>Attributes:</h4>
+          <ul>
+            <li>href (for &lt;a&gt;): The URL to which the link points.</li>
+            <li>src (for &lt;img&gt;): The path to the image file.
+            </li>
+          </ul>
+          <h4>Example code:</h4>
+          <pre><code class="code">
+            &lt;a href="https://example.com"&gt;Visit Example&lt;/a&gt;
+            &lt;img src="image.jpg" alt="Example Image"&gt;
+          </code></pre>
+        </section>
+        <section class="main-section" id="Lists">
+          <header>Lists</header>
+          <p>HTML provides support for both ordered and unordered lists, enabling easy structuring of items like bullet points or numbered lists.</p>
+          <p>In HTML, lists are used to group a set of related items. There are three types of lists: unordered lists, ordered lists, and description lists. Each list type serves a specific purpose, and they are represented using different HTML tags.</p>
+          <ul>
+            <li><strong>Unordered List</strong>: An unordered list is used when the order of the list items doesn’t matter. It is created using the &lt;ul&gt; (unordered list) tag, and each item inside the list is wrapped with the &lt;li&gt; (list item) tag.
+            </li>
+            <h4>Example code:</h4>
+            <pre><code class="code">
+              &lt;ul&gt;
+                &lt;li&gt;Apples&lt;/li&gt;
+                &lt;li&gt;Oranges&lt;/li&gt;
+                &lt;li&gt;Bananas&lt;/li&gt;
+              &lt;/ul&gt;
+
+            </code></pre>
+            <li><strong>Ordered List</strong>: An ordered list is used when the order of the items is important. It is created using the &lt;ol&gt; (ordered list) tag. The items inside the list are also wrapped with the &lt;li&gt; tag. The browser will automatically number the items in an ordered list:
+            </li>
+            <h4>Example code:</h4>
+            <pre><code class="code">
+              &lt;ol&gt;
+                &lt;li&gt;Step 1&lt;/li&gt;
+                &lt;li&gt;Step 2&lt;/li&gt;
+                &lt;li&gt;Step 3&lt;/li&gt;
+              &lt;/ol&gt;
+            </code></pre>
+            <li><strong>Description List</strong>: A description list is used to define a list of terms and their descriptions. It is created using the &lt;dl&gt; (description list) tag, with each term wrapped in the &lt;dt&gt; (description term) tag and its description in the &lt;dd&gt; (description definition) tag. This is useful for glossaries or definitions:
+            </li>
+            <h4>Example code:</h4>
+           </ul> 
+          <pre><code class="code">
+            &lt;dl&gt;
+              &lt;dt&gt;HTML&lt;/dt&gt;
+              &lt;dd&gt;Hypertext Markup Language&lt;/dd&gt;
+              &lt;dt&gt;CSS&lt;/dt&gt;
+              &lt;dd&gt;Cascading Style Sheets&lt;/dd&gt;
+            &lt;/dl&gt;
+          </code></pre>
+
+          
+        </section>
+    </div>    
+    </main>
+  </body>
+</html>
